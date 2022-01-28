@@ -68,6 +68,23 @@ nav a:hover
     display: flex;
     flex-direction: column;
 }
+.total .upper
+{
+    padding: 40px;
+    margin: 10px;
+    overflow: hidden;
+    background-image: url(techer.jpeg);
+    background-size: cover;
+    height: 300px;
+    font-family: 'Nunito', sans-serif;
+    color: white;
+    text-shadow: 1px 1px black;
+}
+.upper img
+{
+    height: 20%;
+}
+
 .container
 {
     padding: 10px;
@@ -92,15 +109,25 @@ nav a:hover
     font-family: 'Nunito', sans-serif;
     font-size: large;
 }
-.container ul li
+
+.container table
 {
+    border: 1px solid grey;
     font-family: 'Nunito', sans-serif;
-    text-align: left;
+    border-radius: 15px;
+    padding: 20px;
+    width: 100%;
 }
 .container table td
 {
     border-bottom: 1px grey dotted;
+    width: 50%;
+    text-align: left;
+    padding: 5px ;
 }
+
+.container table tr:first-child td { border-bottom: solid 1px grey}
+.container table tr:last-child td { border-bottom: none }
 
 .down
 {
