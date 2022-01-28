@@ -211,7 +211,14 @@ text-align: center;
 {
     text-align: left;
 }
-
+down
+{
+    width: 100%;
+}
+.down form 
+{
+    width: 80%;
+}
 footer
 {
     width: 80%;
