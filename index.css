@@ -73,6 +73,7 @@ nav a:hover
     padding: 10px;
     margin: 10px;
     border-bottom: 1px solid grey;
+    font-family: 'Nunito', sans-serif;
 }
 .container:last-child
 {
@@ -91,6 +92,16 @@ nav a:hover
     font-family: 'Nunito', sans-serif;
     font-size: large;
 }
+.container ul li
+{
+    font-family: 'Nunito', sans-serif;
+    text-align: left;
+}
+.container table td
+{
+    border-bottom: 1px grey dotted;
+}
+
 .down
 {
     width: 50%;
@@ -136,11 +147,12 @@ footer
     width: 90%;
     margin-top: 20px;
     background-image: radial-gradient(white, lightblue);
-    
+    padding: 30px;
     text-align: center;
     font-family: 'Nunito', sans-serif;
     display: flex;
     flex-direction: column;
+    text-align: center;
 }
 footer h1
 {
@@ -150,12 +162,12 @@ footer ul
 {
     list-style:none;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     gap:50px;
    
 }
-footer ul a
+footer a
 {
     text-decoration: none;
 }
@@ -165,6 +177,12 @@ footer ul a
 
 @media screen and (max-width: 480px) {
 
+
+body
+{
+    width: 100%;
+}
+
 header
 {
     display: flex;
@@ -173,11 +191,13 @@ header
     width: 100%;
     justify-content: center;
     text-align: center;
-    margin:0 auto;
+    
+    
 }
 nav
 {
     flex-direction: column;
+    display: none;
 }
 header h1
 {
@@ -185,31 +205,40 @@ header h1
 }
 .total{ width: 100%;
 margin:0 auto;
+text-align: center;
+
 }
+
+.total p
+{
+    padding: 20px;
+}
+
+
 
 .down
 {
-   margin:0 auto;
-   width: 100%;
+   margin:10px auto;
+   
    
 }
-
 footer
 {
-    flex-direction: column;
-    width: 100%;
-    justify-content: center;
-    gap:10px;
-    margin:0 auto;
-    padding: 10px;
+    width: 80%;
+    display: flex;
+    
 }
-footer ul
+footer h2
 {
-    margin: 0 auto;
+    height: 5px;
+}
+footer ul 
+{
     flex-direction: column;
-    gap:10px;
-    justify-content: center;
-    text-align: center;
+}
+footer ul a 
+{
+    height: 2px;
 }
 
 }
