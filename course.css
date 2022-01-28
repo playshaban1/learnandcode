@@ -108,6 +108,31 @@ nav a:hover
     border-bottom: none;
 }
 
+.down
+{
+    width: 90%;
+}
+.down form
+{
+    width: 50%;
+    margin: 10px auto;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+
+    border: 1px solid black;
+    gap:10px;
+}
+.down form .items
+
+
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    
+}
+
 footer
 {
     
