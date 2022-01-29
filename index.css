@@ -73,7 +73,7 @@ nav a:hover
     padding: 40px;
     margin: 10px;
     overflow: hidden;
-    background-image: url(teacher.png);
+    background-image: url(image_resources/teacher.png);
     background-size: cover;
     height: 500px;
     font-family: 'Nunito', sans-serif;
@@ -220,7 +220,7 @@ header
     display: flex;
     flex-direction: column;
     gap:20px;
-    width: 100%;
+    width: 90%;
     justify-content: center;
     text-align: center;
     
@@ -242,7 +242,7 @@ nav
     display: flex;
     flex-direction: column;
     width: 100%;
-    transform: translateX(300px);
+    transform: translateX(250px);
     justify-content:right;
     
 
@@ -264,31 +264,41 @@ margin:0 auto;
 text-align: center;
 
 }
-
+.total
+{
+    width: 100%;
+}
 
 .total .upper
 {
     
     background-size: cover;
     height: 350px;
+    width: 80%;
+    margin: 0 auto;
     background-position: center;
     font-family: 'Nunito', sans-serif;
     color: white;
     text-shadow: 1px 1px black;
 
 }
-    .total , .container , .upper .headlines { width:100%; margin: auto;}
+    
 .headlines 
 {
-   
+    
     background-color: rgba(0, 0, 0, 0.301);
     margin-top: 50%;
+   
 }
 .total p
 {
     padding: 20px;
 }
-
+.container
+{
+    width: 80%;
+    margin: 0 auto;
+}
 .container ul li 
 {
     text-align: left;
@@ -302,7 +312,7 @@ text-align: center;
 }
 footer
 {
-    width: 100%;
+    width: 80%;
     display: flex;
     
 }
