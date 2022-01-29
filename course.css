@@ -226,7 +226,7 @@ nav
     display: flex;
     flex-direction: column;
     width: 100%;
-    transform: translateX(300px);
+    transform: translateX(250px);
     justify-content:right;
     
 
