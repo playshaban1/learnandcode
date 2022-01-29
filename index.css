@@ -73,7 +73,7 @@ nav a:hover
     padding: 40px;
     margin: 10px;
     overflow: hidden;
-    background-image: url(image_resources/teacher.png);
+    background-image: url(teacher.png);
     background-size: cover;
     height: 500px;
     font-family: 'Nunito', sans-serif;
