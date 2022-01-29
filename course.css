@@ -48,7 +48,7 @@ nav a
 {
     background-color: lightblue;
     padding: 5px;
-    color: blue;
+    
     font-family: 'Nunito', sans-serif;
     text-decoration: none;
     border-radius: 5%;
@@ -208,12 +208,36 @@ header
     text-align: center;
     
     
+    
+}
+
+.nav_b
+{
+    display: block;
+    width: 80px;
+    padding: 10px;
+    border-radius: 5px;
+    background-image: radial-gradient(white, skyblue);
+    
 }
 nav
 {
+    
+    display: flex;
     flex-direction: column;
-    display: none;
+    width: 100%;
+    transform: translateX(300px);
+    justify-content:right;
+    
+
 }
+nav a 
+{
+    width: 80px;
+    display: none;
+    
+}
+
 header h1
 {
     font-size:25px;
@@ -228,21 +252,25 @@ text-align: center;
 {
     padding: 20px;
 }
-    .container { width:80%; margin:0 auto;}
-    
+.container 
+{
+    margin: 20px;
+}
 
 .container ul
 {
     text-align: left;
 }
-.down , .down form , .down .rows
+.down , .down form 
 {
-    width: 80%;
-    margin: 0 auto;
+    width: 90%;
+    box-sizing: border-box;
+    margin: auto;
+    
 }
 footer
 {
-    width: 100%;
+    width: 80%;
     display: flex;
     
 }
