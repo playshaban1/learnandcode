@@ -277,6 +277,7 @@ text-align: center;
     text-shadow: 1px 1px black;
 
 }
+    .total , .container { width:100%; margin: auto;}
 .headlines 
 {
    
@@ -301,7 +302,7 @@ text-align: center;
 }
 footer
 {
-    width: 80%;
+    width: 100%;
     display: flex;
     
 }
