@@ -48,7 +48,7 @@ nav a
 {
     background-color: lightblue;
     padding: 5px;
-    color: blue;
+    
     font-family: 'Nunito', sans-serif;
     text-decoration: none;
     border-radius: 5%;
@@ -73,16 +73,20 @@ nav a:hover
     padding: 40px;
     margin: 10px;
     overflow: hidden;
-    background-image: url(teacher.png);
+    background-image: url(image_resources/teacher.png);
     background-size: cover;
-    height: 350px;
+    height: 500px;
     font-family: 'Nunito', sans-serif;
     color: white;
     text-shadow: 1px 1px black;
+
 }
-.upper img
+.headlines 
 {
-    height: 20%;
+   
+    background-color: rgba(0, 0, 0, 0.301);
+    margin-top: 40%;
+    text-align: center;
 }
 
 .container
@@ -222,11 +226,35 @@ header
     
     
 }
+
+.nav_b
+{
+    display: block;
+    width: 80px;
+    padding: 10px;
+    border-radius: 5px;
+    background-image: radial-gradient(white, skyblue);
+    
+}
 nav
 {
+    
+    display: flex;
     flex-direction: column;
-    display: none;
+    width: 100%;
+    transform: translateX(300px);
+    justify-content:right;
+    
+
 }
+nav a 
+{
+    width: 100px;
+    display: none;
+    
+    
+}
+
 header h1
 {
     font-size:25px;
@@ -236,16 +264,34 @@ margin:0 auto;
 text-align: center;
 
 }
-.upper
+
+
+.total .upper
 {
+    
+    background-size: cover;
+    height: 350px;
     background-position: center;
+    font-family: 'Nunito', sans-serif;
+    color: white;
+    text-shadow: 1px 1px black;
+
+}
+.headlines 
+{
+   
+    background-color: rgba(0, 0, 0, 0.301);
+    margin-top: 50%;
 }
 .total p
 {
     padding: 20px;
 }
 
-
+.container ul li 
+{
+    text-align: left;
+}
 
 .down
 {
