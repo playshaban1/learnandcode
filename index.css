@@ -73,9 +73,9 @@ nav a:hover
     padding: 40px;
     margin: 10px;
     overflow: hidden;
-    background-image: url(techer.jpeg);
+    background-image: url(image_resources/teacher.png);
     background-size: cover;
-    height: 300px;
+    height: 350px;
     font-family: 'Nunito', sans-serif;
     color: white;
     text-shadow: 1px 1px black;
@@ -125,6 +125,7 @@ nav a:hover
     text-align: left;
     padding: 5px ;
 }
+
 
 .container table tr:first-child td { border-bottom: solid 1px grey}
 .container table tr:last-child td { border-bottom: none }
@@ -235,7 +236,10 @@ margin:0 auto;
 text-align: center;
 
 }
-
+.upper
+{
+    background-position: center;
+}
 .total p
 {
     padding: 20px;
