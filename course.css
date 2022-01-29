@@ -228,6 +228,8 @@ text-align: center;
 {
     padding: 20px;
 }
+    .container { width:90%; margin:10px auto;}
+    
 
 .container ul
 {
@@ -240,7 +242,7 @@ text-align: center;
 }
 footer
 {
-    width: 80%;
+    width: 100%;
     display: flex;
     
 }
