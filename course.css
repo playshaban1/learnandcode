@@ -82,7 +82,8 @@ nav a:hover
     padding: 40px;
     margin: 10px;
     font-family: 'Nunito', sans-serif;
-    background-image: radial-gradient(white, rgb(246, 106, 130));
+    background-image: radial-gradient(pink, skyblue);
+    box-shadow: 1px 1px 10px 1px black;
     
     border-radius: 15px;
     
@@ -102,6 +103,7 @@ nav a:hover
     text-align: left;
     border-bottom: 1px dotted grey;
     
+    
 }
 .container table tr:last-child td
 {
@@ -111,26 +113,46 @@ nav a:hover
 .down
 {
     width: 90%;
+    margin: 0 auto;
+    font-family: 'Nunito', sans-serif;
+    
 }
-.down form
+.down form 
 {
+    margin: 0 auto;
     width: 50%;
-    margin: 10px auto;
-    padding: 30px;
     display: flex;
     flex-direction: column;
-
-    border: 1px solid black;
-    gap:10px;
+    background-image: radial-gradient(white, yellow);
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 10px 0px black;
 }
-.down form .items
-
-
+.down form .rows
 {
     display: flex;
-    flex-direction: row;
-    justify-content: left;
-    
+    flex-direction: column;
+    padding: 10px;
+
+}
+.down form .rows input , .down form .rows select
+{
+    padding: 10px;
+    border-radius: 10px;
+}
+.down form .actions 
+{
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   gap: 25%;
+}
+.down form .actions button
+{
+    padding: 10px;
+    color: black;
+    background-color: skyblue;
+    border-radius: 5px;
 }
 
 footer
@@ -207,17 +229,14 @@ text-align: center;
     padding: 20px;
 }
 
-.container ul 
+.container ul
 {
     text-align: left;
 }
-down
-{
-    width: 100%;
-}
-.down form 
+.down , .down form , .down .rows
 {
     width: 80%;
+    margin: 0 auto;
 }
 footer
 {
