@@ -292,7 +292,7 @@
     {
       console.log("Sending and varifying the details.");
       let xhr = new XMLHttpRequest();
-      xhr.open("POST", "login_in.php", true);
+      xhr.open("POST", "https://privateapp.000webhostapp.com/login_in.php", true);
       xhr.onload = ()=>{
       if(xhr.readyState === XMLHttpRequest.DONE){
           if(xhr.status === 200){
@@ -301,7 +301,7 @@
              
               if(data === "success"){
               
-                window.location.href ="payments.php" ;
+                window.location.href ="https://privateapp.000webhostapp.com/payments.php" ;
               
 
               }else{
