@@ -181,7 +181,7 @@
         </ul>
         <table>
           <tr>
-            <td>Coding Languages</td>
+            Coding Languages</td>
             <td>C++</td>
           </tr>
           <tr>
@@ -203,38 +203,37 @@
           </tr>
         </table>
       </div>
-
       <div class="down">
         <h1>Register For Demo Class Now</h1>
         
-        <form action="https://privateapp.000webhostapp.com/demoregis.php" method="post">
+        <form method="post">
           <p>Register for Demo ₹ 99 /-  (Refundable *) </p>
 
          
             <div class="rows">
                <label> Enter Your First Name  </label> 
-               <input type="text" placeholder="Your first Name" /> 
+               <input type="text" name="fname" id="fname" placeholder="Your first Name" /> 
             </div>
 
             <div class="rows">
               <label> Enter Your Last Name  </label>
-              <input type="text" placeholder="Your Last Name" />
+              <input type="text" name="lname" id="lname" placeholder="Your Last Name" />
             </div>
             
             <div class="rows">
               <label> Enter Your Mobile No.  </label>
-              <input type="number" placeholder="Mobile " />
+              <input type="number" name ="mobile" id="mobile" placeholder="Mobile " />
             </div>
            
             <div class="rows">
               <label> Enter Your Email  </label>
-              <input type="text" placeholder="Your Email" />
+              <input type="email" name = "email" id="email" placeholder="Your Email" />
             </div>
             
             <div class="rows">
               <label> Select Your Course </label>
              
-                <select name="course">
+                <select name="course" id="course">
                   <option value="">Select</option>
                   <option value="FED">Front-End Course</option>
                   <option value="FSD">Full Stack Developer Course</option>
@@ -247,7 +246,7 @@
             <div class="actions">
 
               <button type="reset">Reset <i class="fas fa-redo"></i></button>
-              <button type="submit">Register <i class="fas fa-paper-plane"></i></button>
+              <button type="submit" id ="submit">Register <i class="fas fa-paper-plane"></i></button>
              
   
               
@@ -261,15 +260,17 @@
         </form>
 
         <p style="font-size: 15px; text-align: center;">* Demo fees will be refunded once apply for any course. </p>
+      
+      
       </div>
+     
     
     </div>
     
   </div>
 
   <footer>
-   
-    <h2>Find Developer</h2>
+    <h2>Find Owner</h2>
     <ul>
       <a href="https://www.linkedin.com/in/playshaban/"> <i class="fab fa-linkedin"></i> Linkdin</a>
       <a href="https://www.facebook.com/playshaban"> <i class="fab fa-facebook-square"></i> Facebook</a>
@@ -278,4 +279,42 @@
       
     </ul>
   </footer>
+  <script>
+    const form = document.querySelector(".down form");
+    const btn = form.querySelector("#submit");
+
+    form.onsubmit=(e)=>
+    {
+      e.preventDefault();
+    }
+
+    btn.onclick = ()=>
+    {
+      console.log("Sending and varifying the details.");
+      let xhr = new XMLHttpRequest();
+      xhr.open("POST", "demo_registration.php", true);
+      xhr.onload = ()=>{
+      if(xhr.readyState === XMLHttpRequest.DONE){
+          if(xhr.status === 200){
+              let data = xhr.response;
+              
+             
+              if(data === "success"){
+              
+                window.location.href ="payments.php" ;
+              
+
+              }else{
+                alert(data);
+              }
+             
+          }
+      }
+    }
+    let formData = new FormData(form);
+    xhr.send(formData);
+    }
+
+  </script>
+
 </body>
