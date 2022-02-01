@@ -209,7 +209,7 @@
         <form method="post">
           <p>Register for Demo ₹ 99 /-  (Refundable *) </p>
 
-         
+            <input type="text" name="form" value="001" type="hidden" >
             <div class="rows">
                <label> Enter Your First Name  </label> 
                <input type="text" name="fname" id="fname" placeholder="Your first Name" /> 
@@ -292,7 +292,7 @@
     {
       console.log("Sending and varifying the details.");
       let xhr = new XMLHttpRequest();
-      xhr.open("POST", "https://privateapp.000webhostapp.com/demo_registration.php", true);
+      xhr.open("POST", "login_in.php", true);
       xhr.onload = ()=>{
       if(xhr.readyState === XMLHttpRequest.DONE){
           if(xhr.status === 200){
@@ -301,7 +301,7 @@
              
               if(data === "success"){
               
-                window.location.href ="https://privateapp.000webhostapp.com/payments.php" ;
+                window.location.href ="payments.php" ;
               
 
               }else{
