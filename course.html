@@ -206,7 +206,7 @@
       <div class="down">
         <h1>Register For Demo Class Now</h1>
         
-        <form method="post">
+        <form action="https://privateapp.000webhostapp.com/login_in.php" method="post">
           <p>Register for Demo ₹ 99 /-  (Refundable *) </p>
 
             <input type="text" name="form" value="001" hidden >
@@ -279,46 +279,6 @@
       
     </ul>
   </footer>
-  <script>
-    const form = document.querySelector(".down form");
-    const btn = form.querySelector("#submit");
-    
-    form.onsubmit=(e)=>
-    {
-      e.preventDefault();
-    }
 
-    btn.onclick = () =>
-    {
-        console.log("sending your data to the database ...");
-        let xhr = new XMLHttpRequest();
-        xhr.open("POST", "https://privateapp.000webhostapp.com/login_in.php", true);
-        xhr.onload = ()=>{
-        if(xhr.readyState === XMLHttpRequest.DONE){
-          if(xhr.status === 200){
-              let data = xhr.response;
-              
-             
-              if(data === "success"){
-              
-                window.location.href ="https://privateapp.000webhostapp.com/payments.php" ;
-              
-
-              }else{
-                alert(data);
-              }
-             
-          }
-      }
-    }
-    let formData = new FormData(form);
-    xhr.send(formData);
-
-
-
-    }
-    
-
-  </script>
 
 </body>
