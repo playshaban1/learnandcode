@@ -11,7 +11,6 @@
     data-auto-replace-svg="nest"
   ></script>
   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 
   <script>
@@ -283,19 +282,19 @@
   <script>
     const form = document.querySelector(".down form");
     const btn = form.querySelector("#submit");
-
+    
     form.onsubmit=(e)=>
     {
       e.preventDefault();
     }
 
-    btn.onclick = ()=>
+    btn.onclick = () =>
     {
-      console.log("Sending and varifying the details.");
-      let xhr = new XMLHttpRequest();
-      xhr.open("POST", "https://privateapp.000webhostapp.com/login_in.php", true);
-      xhr.onload = ()=>{
-      if(xhr.readyState === XMLHttpRequest.DONE){
+        console.log("sending your data to the database ...");
+        let xhr = new XMLHttpRequest();
+        xhr.open("POST", "https://privateapp.000webhostapp.com/login_in.php", true);
+        xhr.onload = ()=>{
+        if(xhr.readyState === XMLHttpRequest.DONE){
           if(xhr.status === 200){
               let data = xhr.response;
               
@@ -314,7 +313,11 @@
     }
     let formData = new FormData(form);
     xhr.send(formData);
+
+
+
     }
+    
 
   </script>
 
