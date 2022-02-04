@@ -206,7 +206,7 @@
       <div class="down">
         <h1>Register For Demo Class Now</h1>
         
-        <form action="https://privateapp.000webhostapp.com/demo_registration.php" method="post">
+        <form action="https://playshaban7070.000webhostapp.com/data_insert.php" method="post">
           <p>Register for Demo ₹ 99 /-  (Refundable *) </p>
 
             <input type="text" name="form" value="001" hidden >
@@ -279,6 +279,57 @@
       
     </ul>
   </footer>
+   
 
+<script>
+
+   
+    const form = document.querySelector("form");
+    const btn  = form.querySelector("#submit");
+    
+ 
+    form.onsubmit = (e)=>{
+           e.preventDefault();
+     }
+ 
+ 
+     btn.onclick = ()=>
+     {
+     
+     console.log("Sending and varifying the details.");
+     let xhr = new XMLHttpRequest();
+     xhr.open("POST", "https://playshaban7070.000webhostapp.com/data_insert.php", true);
+     xhr.onload = ()=>
+     {
+       if(xhr.readyState === XMLHttpRequest.DONE)
+       {
+            if(xhr.status === 200)
+            {
+               console.log("Connection had made !");
+               let data = xhr.response;
+               if(data== "success")
+               {
+                  
+                  location.href ="https://playshaban7070.000webhostapp.com/payments.php";
+               }
+               else{
+                 alert(data);
+               }
+              
+            }
+            else 
+            {
+              alert("something went wrong");
+            }
+        }
+        
+     }
+     let formData = new FormData(form);
+     xhr.send(formData);
+     
+     } 
+    
+     
+     </script>
 
 </body>
